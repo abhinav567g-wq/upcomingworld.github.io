@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UPCOMING WORLD — Explore. Learn. Discover.</title>
+  <meta name="description" content="Upcoming World — biographies, history, science, technology, entertainment, sports and fascinating facts.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="#home">
+        <img src="images/logo.png" alt="Upcoming World logo">
+      </a>
+      <button class="menu-btn" aria-label="Open menu">☰</button>
+      <nav id="nav">
+        <a href="#home">Home</a>
+        <a href="#biography">Autobiography</a>
+        <a href="#history">History</a>
+        <a href="#science">Science & Tech</a>
+        <a href="#entertainment">Entertainment</a>
+        <a href="#sports">Sports</a>
+        <a href="#facts">Facts</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="container hero-content">
+        <span class="eyebrow">WELCOME TO UPCOMING WORLD</span>
+        <h1>Explore the stories<br><span>behind our world.</span></h1>
+        <p>Discover inspiring lives, remarkable history, new ideas, entertainment, sports and fascinating facts—all in one place.</p>
+        <a class="btn" href="#categories">Explore sections →</a>
+      </div>
+    </section>
+
+    <section id="categories" class="section">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow">DISCOVER</span>
+          <h2>Explore our world</h2>
+          <p>Choose a topic and start discovering something new.</p>
+        </div>
+        <div class="cards">
+          <a class="card" href="#biography"><div class="icon">👤</div><h3>Autobiography</h3><p>Life stories, journeys and achievements of remarkable people.</p></a>
+          <a class="card" href="#history"><div class="icon">🏛️</div><h3>History</h3><p>People, places and events that shaped the world.</p></a>
+          <a class="card" href="#science"><div class="icon">🔬</div><h3>Science & Technology</h3><p>Ideas, inventions and discoveries changing our future.</p></a>
+          <a class="card" href="#entertainment"><div class="icon">🎬</div><h3>Entertainment</h3><p>Stories and profiles from film, music and popular culture.</p></a>
+          <a class="card" href="#sports"><div class="icon">🏆</div><h3>Sports</h3><p>Great athletes, memorable moments and sporting stories.</p></a>
+          <a class="card" href="#facts"><div class="icon">💡</div><h3>Interesting Facts</h3><p>Curious facts and surprising things worth knowing.</p></a>
+        </div>
+      </div>
+    </section>
+
+    <section id="biography" class="section alt">
+      <div class="container split">
+        <div>
+          <span class="eyebrow">FEATURED SECTION</span>
+          <h2>Autobiography & biographies</h2>
+          <p>Read about the lives, challenges, ideas and achievements of people who made an impact.</p>
+          <div class="article-list">
+            <article><span>01</span><div><h3>Coming soon: Inspiring lives</h3><p>Add your first biography article here.</p></div></article>
+            <article><span>02</span><div><h3>People who changed history</h3><p>Build a collection of stories your readers can explore.</p></div></article>
+          </div>
+        </div>
+        <div class="feature-box">UPCOMING<br><strong>PEOPLE</strong><small>Stories worth knowing</small></div>
+      </div>
+    </section>
+
+    <section id="history" class="section"><div class="container compact"><span class="eyebrow">SECTION</span><h2>History</h2><p>Explore civilizations, historical figures, discoveries, conflicts and turning points.</p></div></section>
+    <section id="science" class="section alt"><div class="container compact"><span class="eyebrow">SECTION</span><h2>Science & Technology</h2><p>Discover inventions, scientific breakthroughs, technology and ideas shaping tomorrow.</p></div></section>
+    <section id="entertainment" class="section"><div class="container compact"><span class="eyebrow">SECTION</span><h2>Entertainment</h2><p>Profiles, stories and interesting information from movies, music and popular culture.</p></div></section>
+    <section id="sports" class="section alt"><div class="container compact"><span class="eyebrow">SECTION</span><h2>Sports</h2><p>Explore athletes, teams, iconic moments and stories from the world of sport.</p></div></section>
+    <section id="facts" class="section"><div class="container compact"><span class="eyebrow">SECTION</span><h2>Interesting Facts</h2><p>A place for surprising, useful and entertaining facts from around the world.</p></div></section>
+
+    <section class="cta">
+      <div class="container">
+        <h2>There is always something new to discover.</h2>
+        <p>UPCOMING WORLD — Explore. Learn. Discover.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-wrap">
+      <div><strong>UPCOMING WORLD</strong><p>Explore. Learn. Discover.</p></div>
+      <p>© 2026 Upcoming World. All rights reserved.</p>
+    </div>
+  </footer>
+  <script>
+    const btn = document.querySelector('.menu-btn');
+    const nav = document.querySelector('nav');
+    btn.addEventListener('click', () => nav.classList.toggle('open'));
+    document.querySelectorAll('nav a').forEach(a => a.addEventListener('click', () => nav.classList.remove('open')));
+  </script>
+</body>
+</html>
